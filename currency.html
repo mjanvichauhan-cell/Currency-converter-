@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="../currencyconverter/converter.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+        <img src="../currencyconverter/logo.png" alt="Currency Converter Logo">
+        <h1>Currency Converter</h1>
+    </div>
+
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#container">Converter</a>
+        <a href="#currencies">Currencies</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+    <main>
+    <h1>CURRENCY CONVERTER</h1>
+    <h3>Convert 140+ Currencies at the mid-market 
+        exchange rate</h3>
+    <div class="container" id="container" >
+    <form>
+        <h2> mid-market exchange rate</h2>
+        <div class="msg">
+            <h1>1 USD = 80 INR</h1>
+        </div>
+        <p class="last-updated" id="lastUpdated"></p>
+        <div class="currency-box">
+        <div class="amount">
+            <label for="amount"><h2>Amount</h2></label>
+            <input id="amount" type="text" value="1">
+        </div>
+                <div class="select-container from">
+                    <img src="https://flagsapi.com/US/flat/64.png">
+                    <select name="from" id="from">
+                    </select>
+                </div>
+            </div>
+        <div class="swap-btn">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </div>
+        <div class="currency-box ">
+    <div class="amount">
+        <label for="converted"><h2>Converted To</h2></label>
+        <input id="converted" type="text" >
+    </div>
+    <div class="select-container to">
+        <img src="https://flagsapi.com/IN/flat/64.png" >
+        <select name="to" id="to">
+        </select>
+    </div>
+    </div>
+        <button type="submit">Track Exchange Rate</button>
+    </form>
+    </div>
+    </main>
+    <section class="countries-section" id="currencies">
+
+    <h2>🌍 Supported Countries</h2>
+
+    <p>Convert between 140+ currencies from around the world.</p>
+
+    <div class="countries-grid" id="countriesGrid">
+
+        <div class="country-card">
+            <img src="https://flagsapi.com/IN/flat/64.png">
+            <h3>India</h3>
+            <span>INR</span>
+        </div>
+
+        <div class="country-card">
+            <img src="https://flagsapi.com/US/flat/64.png">
+            <h3>United States</h3>
+            <span>USD</span>
+        </div>
+
+        <div class="country-card">
+            <img src="https://flagsapi.com/GB/flat/64.png">
+            <h3>United Kingdom</h3>
+            <span>GBP</span>
+        </div>
+
+        <div class="country-card">
+            <img src="https://flagsapi.com/JP/flat/64.png">
+            <h3>Japan</h3>
+            <span>JPY</span>
+        </div>
+
+        <div class="country-card">
+            <img src="https://flagsapi.com/CA/flat/64.png">
+            <h3>Canada</h3>
+            <span>CAD</span>
+        </div>
+
+        <div class="country-card">
+            <img src="https://flagsapi.com/AU/flat/64.png">
+            <h3>Australia</h3>
+            <span>AUD</span>
+        </div>
+
+    </div>
+</section>
+<button type="submit"> All 160+ Countries with their Currencies code </button>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>Currency Converter</h3>
+            <p>Fast, simple and accurate currency conversion.</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#container">Converter</a></li>
+                <li><a href="#currencies">Currencies</a></li>
+            </ul>
+        </div>
+        <div class="footer-legal">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Email: mjanvichauhan@gmail.com</p>
+            <p>GitHub: mjanvichauhan-cell></p>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">
+        © 2026 Currency Converter. All Rights Reserved.
+    </p>
+</footer>
+    <script src="../currencyconverter/calc.js"></script>
+</body>
+</html>
